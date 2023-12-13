@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C2894C52B27B2300045395D /* SwiftKueryMySQL in Frameworks */ = {isa = PBXBuildFile; productRef = 9C2894C42B27B2300045395D /* SwiftKueryMySQL */; };
+		9C9E771B2B2A4CC70069955B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E771A2B2A4CC70069955B /* Database.swift */; };
+		9CB5519B2B27B7EE006A2EF8 /* SwiftKueryMySQL in Frameworks */ = {isa = PBXBuildFile; productRef = 9CB5519A2B27B7EE006A2EF8 /* SwiftKueryMySQL */; };
 		9CE036F22B27A1320041503D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE036F12B27A1320041503D /* main.swift */; };
+		9CE036FA2B27A5330041503D /* SwiftKueryMySQL in Frameworks */ = {isa = PBXBuildFile; productRef = 9CE036F92B27A5330041503D /* SwiftKueryMySQL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C9E77192B2A49EB0069955B /* connection.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = connection.json; sourceTree = "<group>"; };
+		9C9E771A2B2A4CC70069955B /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		9CE036EE2B27A1320041503D /* Filme10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Filme10; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE036F12B27A1320041503D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9CE036FB2B27A7450041503D /* Filme10.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Filme10.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C2894C52B27B2300045395D /* SwiftKueryMySQL in Frameworks */,
+				9CE036FA2B27A5330041503D /* SwiftKueryMySQL in Frameworks */,
+				9CB5519B2B27B7EE006A2EF8 /* SwiftKueryMySQL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +67,10 @@
 		9CE036F02B27A1320041503D /* Filme10 */ = {
 			isa = PBXGroup;
 			children = (
+				9CE036FB2B27A7450041503D /* Filme10.entitlements */,
 				9CE036F12B27A1320041503D /* main.swift */,
+				9C9E77192B2A49EB0069955B /* connection.json */,
+				9C9E771A2B2A4CC70069955B /* Database.swift */,
 			);
 			path = Filme10;
 			sourceTree = "<group>";
@@ -78,6 +91,11 @@
 			dependencies = (
 			);
 			name = Filme10;
+			packageProductDependencies = (
+				9CE036F92B27A5330041503D /* SwiftKueryMySQL */,
+				9C2894C42B27B2300045395D /* SwiftKueryMySQL */,
+				9CB5519A2B27B7EE006A2EF8 /* SwiftKueryMySQL */,
+			);
 			productName = Filme10;
 			productReference = 9CE036EE2B27A1320041503D /* Filme10 */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 9CE036E52B27A1320041503D;
+			packageReferences = (
+				9CE036F82B27A5330041503D /* XCRemoteSwiftPackageReference "SwiftkueryMySQL" */,
+			);
 			productRefGroup = 9CE036EF2B27A1320041503D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9E771B2B2A4CC70069955B /* Database.swift in Sources */,
 				9CE036F22B27A1320041503D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +270,11 @@
 		9CE036F62B27A1320041503D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Filme10/Filme10.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86GS843DZ;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -257,7 +283,11 @@
 		9CE036F72B27A1320041503D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Filme10/Filme10.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86GS843DZ;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -285,6 +315,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9CE036F82B27A5330041503D /* XCRemoteSwiftPackageReference "SwiftkueryMySQL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kitura/SwiftkueryMySQL";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C2894C42B27B2300045395D /* SwiftKueryMySQL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CE036F82B27A5330041503D /* XCRemoteSwiftPackageReference "SwiftkueryMySQL" */;
+			productName = SwiftKueryMySQL;
+		};
+		9CB5519A2B27B7EE006A2EF8 /* SwiftKueryMySQL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CE036F82B27A5330041503D /* XCRemoteSwiftPackageReference "SwiftkueryMySQL" */;
+			productName = SwiftKueryMySQL;
+		};
+		9CE036F92B27A5330041503D /* SwiftKueryMySQL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CE036F82B27A5330041503D /* XCRemoteSwiftPackageReference "SwiftkueryMySQL" */;
+			productName = SwiftKueryMySQL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9CE036E62B27A1320041503D /* Project object */;
 }
