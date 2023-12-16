@@ -10,6 +10,8 @@
 		9C2894C52B27B2300045395D /* SwiftKueryMySQL in Frameworks */ = {isa = PBXBuildFile; productRef = 9C2894C42B27B2300045395D /* SwiftKueryMySQL */; };
 		9C9E771B2B2A4CC70069955B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E771A2B2A4CC70069955B /* Database.swift */; };
 		9CB5519B2B27B7EE006A2EF8 /* SwiftKueryMySQL in Frameworks */ = {isa = PBXBuildFile; productRef = 9CB5519A2B27B7EE006A2EF8 /* SwiftKueryMySQL */; };
+		9CD962BE2B2BA6D6000E24AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD962BD2B2BA6D6000E24AD /* Model.swift */; };
+		9CD962C02B2BAA0E000E24AD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD962BF2B2BAA0E000E24AD /* Utils.swift */; };
 		9CE036F22B27A1320041503D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE036F12B27A1320041503D /* main.swift */; };
 		9CE036FA2B27A5330041503D /* SwiftKueryMySQL in Frameworks */ = {isa = PBXBuildFile; productRef = 9CE036F92B27A5330041503D /* SwiftKueryMySQL */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		9C9E77192B2A49EB0069955B /* connection.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = connection.json; sourceTree = "<group>"; };
 		9C9E771A2B2A4CC70069955B /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		9CD962BD2B2BA6D6000E24AD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9CD962BF2B2BAA0E000E24AD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9CE036EE2B27A1320041503D /* Filme10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Filme10; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE036F12B27A1320041503D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9CE036FB2B27A7450041503D /* Filme10.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Filme10.entitlements; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		9CE036E52B27A1320041503D = {
 			isa = PBXGroup;
 			children = (
+				9CD962BD2B2BA6D6000E24AD /* Model.swift */,
 				9CE036F02B27A1320041503D /* Filme10 */,
 				9CE036EF2B27A1320041503D /* Products */,
 			);
@@ -71,6 +76,7 @@
 				9CE036F12B27A1320041503D /* main.swift */,
 				9C9E77192B2A49EB0069955B /* connection.json */,
 				9C9E771A2B2A4CC70069955B /* Database.swift */,
+				9CD962BF2B2BAA0E000E24AD /* Utils.swift */,
 			);
 			path = Filme10;
 			sourceTree = "<group>";
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD962BE2B2BA6D6000E24AD /* Model.swift in Sources */,
 				9C9E771B2B2A4CC70069955B /* Database.swift in Sources */,
 				9CE036F22B27A1320041503D /* main.swift in Sources */,
+				9CD962C02B2BAA0E000E24AD /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
